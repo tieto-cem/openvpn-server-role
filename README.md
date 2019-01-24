@@ -28,6 +28,7 @@ ansible-galaxy install git+https://github.com/tieto-cem/openvpn-client-role.git
 
 Create the playbook, e.g. with this [example](example/). The project structure for the example look like this:
 
+```bash
 .
 ├── inventory
 |   └── project_inventory
@@ -36,6 +37,7 @@ Create the playbook, e.g. with this [example](example/). The project structure f
 ├── install-openvpn.yml
 ├── install.sh
 └── obtain-keys.sh
+```
 
 Redefine the inventory file, [project_inventory](example/inventory/project_inventory), use the public IP address of the Ubuntu machine. Also modify the location to the projects private SSH key.
 
@@ -44,7 +46,7 @@ Redefine the inventory file, [project_inventory](example/inventory/project_inven
 34.100.10.1
 
 [all:vars]
-ansible_connection=ssh 
+ansible_connection=ssh
 ansible_ssh_private_key_file=~/.ssh/example-project.pem
 ansible_ssh_user=ubuntu
 ansible_python_interpreter=/usr/bin/python3.5
