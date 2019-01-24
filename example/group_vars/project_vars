@@ -1,0 +1,18 @@
+---
+# VPN Clients
+VpnClients:
+  - jarl
+  - timo
+
+# Server Name
+ServerName: example-project
+
+# Redirect all traffic trough the VPN server
+RedrirectTraffic: false
+
+# Local networks
+LocalNetworks:
+  - 10.100.0.0 255.255.0.0
+
+# Network Interface
+NetworkInterface: eth0

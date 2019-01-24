@@ -1,0 +1,8 @@
+---
+# This playbook deploys the OpenVPN roles.
+
+- hosts: example-project
+  become: True
+  roles:
+    - openvpn-server-role
+    - openvpn-client-role
