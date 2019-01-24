@@ -28,7 +28,7 @@ ansible-galaxy install git+https://github.com/tieto-cem/openvpn-client-role.git
 
 Create the playbook, e.g. with this [example](example/). The project structure for the example look like this:
 
-```bash
+```console
 .
 ├── inventory
 |   └── project_inventory
