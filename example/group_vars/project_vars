@@ -10,9 +10,13 @@ ServerName: example-project
 # Redirect all traffic trough the VPN server
 RedrirectTraffic: false
 
+# Server network
+ServerNetwork: 10.8.0.0 255.255.255.0
+
 # Local networks
 LocalNetworks:
   - 10.100.0.0 255.255.0.0
+  - service.example.com 255.255.255.255
 
 # Network Interface
 NetworkInterface: eth0

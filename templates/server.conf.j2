@@ -25,7 +25,7 @@ push "redirect-gateway def1 bypass-dhcp"
 
 ifconfig-pool-persist /etc/openvpn/ipp.txt
 
-server 10.8.0.0 255.255.255.0
+server {{ ServerNetwork }}
 
 user nobody
 group nogroup
@@ -39,7 +39,7 @@ status /etc/openvpn/openvpn-status.log
 
 # logging settings.
 log-append  /var/log/openvpn.log
-verb 1  # don't spam the log with messages.
+verb 1   # don't spam the log with messages.
 mute 10  # suppress identical messages > 10 occurances.
 
 script-security 2
