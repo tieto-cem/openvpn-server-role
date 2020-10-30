@@ -18,5 +18,10 @@ LocalNetworks:
   - 10.100.0.0 255.255.0.0
   - service.example.com 255.255.255.255
 
+# DHCP Options - This is an optional setting
+#DhcpOptions:
+#  - DNS 8.8.8.8
+
+
 # Network Interface
 NetworkInterface: eth0
