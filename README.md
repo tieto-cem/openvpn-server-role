@@ -61,6 +61,7 @@ Redefine the group variables in the group_vars file, [project_vars](example/grou
 | RedrirectTraffic | If `true` all traffic will get routed trough the VPN server. Normally this can be `false` |
 | ServerNetwork | Network reserved for the server |
 | LocalNetworks | Clients will route all traffic trough the VPN server within these IP-ranges |
+| DhcpOptions | Optional - Allows server to push DHCP options (like nameserver) to client |
 | NetworkInterface | Network interface for the public IP |
 
 #### Run ansible
