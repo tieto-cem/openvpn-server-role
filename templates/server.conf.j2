@@ -9,6 +9,12 @@ compress lz4
 push "route {{ localNetwork }}"
 {% endfor %}
 
+{% if DhcpOptions is defined %}
+{% for dhcpOption in DhcpOptions %}
+push "dhcp-option {{ dhcpOption }}"
+{% endfor %}
+{% endif %}
+
 # Keys and certificates.
 ca   /etc/openvpn/ca.crt
 key  /etc/openvpn/{{ ServerName }}.key # This file should be kept secret.
