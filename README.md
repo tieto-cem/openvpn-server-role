@@ -22,8 +22,8 @@ Ansible automatically install OpenVPN with all dependencies and configurations.
 Run the following commands in order to install the server role and the client role
 
 ```bash
-ansible-galaxy install git+https://github.com/tieto-cem/openvpn-server-role.git,v1.1.0
-ansible-galaxy install git+https://github.com/tieto-cem/openvpn-client-role.git,v1.1.0
+ansible-galaxy install git+https://github.com/tieto-cem/openvpn-server-role.git,v1.2.0
+ansible-galaxy install git+https://github.com/tieto-cem/openvpn-client-role.git,v1.2.0
 ```
 
 Create the playbook, e.g. with this [example](example/). The project structure for the example look like this:
